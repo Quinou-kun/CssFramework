@@ -1,0 +1,220 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/*TD*/
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color : black;
+    width : 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color : black;
+    font-weight: bold;
+    margin : 30px;
+    display : block;
+}
+
+
+h1{
+    font-size : 50px;
+}
+h1.small, h1 small{
+    font-size : 40px;
+}
+h2{
+    font-size : 40px;
+}
+h2.small, h2 small{
+    font-size : 32px;
+}
+h3{
+    font-size : 35px;
+}
+h3.small, h3 small{
+    font-size : 28px;
+}
+h4{
+    font-size : 28px;
+}
+h4.small, h4 small{
+    font-size : 22px;
+}
+
+h5{
+    font-size : 20px;
+}
+h5.small, h5 small{
+    font-size : 16px;
+}
+
+h6{
+    font-size : 15px;
+}
+h6.small, h6 small{
+    font-size : 12px;
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,
+h1.small,h2.small,h3.small,h4.small,h5.small,h6.small {
+    color: grey;
+}
+
+p{
+    margin-bottom : 25px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+del{
+    text-decoration: line-through;
+    color : red;
+}
+
+u{
+    text-decoration: underline;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
+
+abbr{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.align-left{
+    text-align: left;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
+.align-justify{
+    text-align: justify;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+ul {
+    display: block;
+    padding-left : 1%;
+    list-style-type: disc;
+    margin-bottom : 25px;
+
+}
+ul li{
+    display : list-item;
+}
+
+ul.square-style{
+    list-style-type: square;
+}
+
+ul.circle-style{
+    list-style-type: circle;
+}
+
+ul.decoration-none{
+    list-style-type: none;
+}
+
+blockquote{
+    display : block;
+    text-align : center;
+    margin: 3% 12%;
+    font-style: italic;
+    background-color : lightgrey;
+    padding : 2%;
+    font-size : 1.2em;
+    border : 1px dotted black;
+}
+blockquote:before{
+    content : "\" "
+}
+
+blockquote:after{
+    content : " \""
+}
+
+code{
+    font-family: Consolas, monaco, monospace;
+    display : block;
+    margin : 3% 12%;
+    padding : 1%;
+    background-color : black;
+    color : white;
+    border-left : 8px solid darkolivegreen;
+}
+
+pre{
+    display : block;
+    white-space: pre;
+    margin : 1em 0;
+}
+
+kbd{
+    margin : 1em 0;
+    font-family: Consolas, monaco, monospace;
+}
