@@ -221,27 +221,6 @@ kbd{
     font-family: Consolas, monaco, monospace;
 }
 
-.alert-error, .alert-info, .alert-success, .alert-warning{
-    display : block;
-    color : white;
-    font-style: oblique;
-    padding : 2%;
-    max-width : 100%;
-}
-
-.alert-error{
-    background-color: red;
-}
-.alert-info {
-    background-color: dodgerblue;
-}
-.alert-success {
-    background-color: green;
-}
-.alert-warning {
-    background-color: orange;
-}
-
 table{
     margin-top : 10px;
 }
