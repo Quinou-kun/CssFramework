@@ -1,0 +1,108 @@
+button, a, body{
+    /*Reset's every elements apperance*/
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: black;
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+.btn{
+    padding: 1em;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: center;
+    background-color: #cacaca;
+    color: black ;
+    border: 1px solid dimgrey;
+    border-radius: 10px;
+    margin : 0.5em;
+    outline: none;
+}
+.btn:hover {
+    background-color: lightgray;
+    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.btn:active{
+    transform: translateY(1px);
+}
+
+.small{
+    font-size: 75%;
+    line-height: 75%;
+    padding: 0.5em ;
+    border-radius: 5px;
+    border: 1px solid dimgrey;
+}
+
+.large{
+    font-size: 150%;
+    line-height: 150%;
+    padding: 1.5em ;
+    border-radius: 15px;
+    border: 1px solid dimgrey;
+}
+.blue{
+    background-color: blue;
+    color : midnightblue;
+    border-color: midnightblue  ;
+}
+.blue:hover{
+    background-color: midnightblue;
+    color: aqua;
+}
+
+.red {
+    background-color: red;
+    color: darkred;
+    border-color:darkred ;
+}
+.red:hover{
+    background-color: darkred;
+    color: #ff002d;
+}
+
+.green{
+    background-color: green;
+    color : #004b00;
+    border-color: #004b00;
+}
+.green:hover{
+    background-color: darkgreen;
+    color : chartreuse;
+}
+
+.flat{
+    border: none;
+    border-radius: 0%;
+}
+.flat:hover{
+    box-shadow: none;
+}
+.flat:active{
+    transform: none;
+}
+
+.extraLarge{
+    width : 100%;
+    margin : auto;
+}
+
+.fancy{
+    transition: transform 1s;
+}
+.fancy:hover{
+}
+.fancy:focus{
+    transform: rotate(360deg) scale(1.5);
+}
