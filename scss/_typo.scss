@@ -1,0 +1,208 @@
+@import "variables";
+@import "reset";
+
+$bodyFontFamily : Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$bodyColor : black;
+$bodyBackgroundColor : white;
+$bodyWidth : 100%;
+$hColor : black;
+$hFontWeight : bold;
+
+body {
+  font-family: $bodyFontFamily;
+  color : $bodyColor;
+  background-color : $bodyBackgroundColor;
+  width : $bodyWidth;
+  margin : auto;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  color : $hColor;
+  font-weight: $hFontWeight;
+  margin : 20px;
+  display : block;
+}
+
+
+h1{
+  font-size : 50px;
+}
+h1.small, h1 small{
+  font-size : 40px;
+}
+h2{
+  font-size : 40px;
+}
+h2.small, h2 small{
+  font-size : 32px;
+}
+h3{
+  font-size : 35px;
+}
+h3.small, h3 small{
+  font-size : 28px;
+}
+h4{
+  font-size : 28px;
+}
+h4.small, h4 small{
+  font-size : 22px;
+}
+
+h5{
+  font-size : 20px;
+}
+h5.small, h5 small{
+  font-size : 16px;
+}
+
+h6{
+  font-size : 15px;
+}
+h6.small, h6 small{
+  font-size : 12px;
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,
+h1.small,h2.small,h3.small,h4.small,h5.small,h6.small {
+  color: grey;
+}
+
+p{
+  margin-bottom : 25px;
+}
+
+mark {
+  background-color: yellow;
+}
+
+del{
+  text-decoration: line-through;
+  color : red;
+}
+
+u{
+  text-decoration: underline;
+}
+
+strong{
+  font-weight: bold;
+}
+
+em{
+  font-style: italic;
+}
+
+abbr{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.align-left{
+  text-align: left;
+}
+.align-center{
+  text-align: center;
+}
+.align-right{
+  text-align: right;
+}
+.align-justify{
+  text-align: justify;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.lowercase{
+  text-transform: lowercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+ul {
+  display: block;
+  padding-left : 1%;
+  list-style-type: disc;
+  margin-bottom : 25px;
+
+}
+ul li{
+  display : list-item;
+}
+
+ul.square-style{
+  list-style-type: square;
+}
+
+ul.circle-style{
+  list-style-type: circle;
+}
+
+ul.decoration-none{
+  list-style-type: none;
+}
+
+blockquote{
+  display : block;
+  text-align : center;
+  margin: 3% 12%;
+  font-style: italic;
+  background-color : lightgrey;
+  padding : 2%;
+  font-size : 1.2em;
+  border : 1px dotted black;
+}
+blockquote:before{
+  content : "\" "
+}
+
+blockquote:after{
+  content : " \""
+}
+
+code{
+  font-family: Consolas, monaco, monospace;
+  display : block;
+  margin : 3% 12%;
+  padding : 1%;
+  background-color : black;
+  color : white;
+  border-left : 8px solid darkolivegreen;
+}
+
+pre{
+  display : block;
+  white-space: pre;
+  margin : 1em 0;
+}
+
+kbd{
+  margin : 1em 0;
+  font-family: Consolas, monaco, monospace;
+}
+
+table{
+  margin-top : 10px;
+}
+table.simple-tab{
+  border-collapse: collapse;
+  text-align: center;
+}
+table.simple-tab, th, td, tr {
+  border: 1px solid black;
+  padding : 10px 20px;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table.altern-tab tr:nth-child(2n+1){
+  background-color: lightblue;
+}
+
+table.active-tab tr:hover{
+  background-color : lightblue;
+}
