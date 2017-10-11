@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58293acb-ea96-423d-ad54-851a3ee04e3b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/nav.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/typo.css" afterPath="$PROJECT_DIR$/css/typo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typo.html" afterPath="$PROJECT_DIR$/typo.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="typo.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="typo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/typo.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
@@ -28,11 +28,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="nav.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/nav.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="typo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/typo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="166" column="20" lean-forward="false" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
+            <state relative-caret-position="72">
+              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="5" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -61,6 +81,8 @@
       <list>
         <option value="$PROJECT_DIR$/typo.html" />
         <option value="$PROJECT_DIR$/css/typo.css" />
+        <option value="$PROJECT_DIR$/nav.html" />
+        <option value="$PROJECT_DIR$/css/nav.css" />
       </list>
     </option>
   </component>
@@ -71,10 +93,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="817" />
+    <option name="x" value="65" />
     <option name="y" value="-4" />
-    <option name="width" value="1391" />
-    <option name="height" value="812" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -99,6 +121,11 @@
               <item name="CssFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="CssFramework" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CssFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CssFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -108,7 +135,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TD1/Selecteurs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TD4" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -136,12 +163,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507644617734</updated>
       <workItem from="1507644618864" duration="6965000" />
-      <workItem from="1507726976481" duration="3054000" />
+      <workItem from="1507726976481" duration="5855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10019000" />
+    <option name="totallyTimeSpent" value="12820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -192,18 +219,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="166" column="20" lean-forward="false" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/typo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="5" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding />
         </state>
       </provider>
