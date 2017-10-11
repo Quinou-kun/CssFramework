@@ -50,13 +50,15 @@ table {
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color : black;
-    width : 100%;
+    width : 98%;
+    margin : auto;
+
 }
 
 h1,h2,h3,h4,h5,h6{
     color : black;
     font-weight: bold;
-    margin : 30px;
+    margin : 20px;
     display : block;
 }
 
@@ -217,4 +219,49 @@ pre{
 kbd{
     margin : 1em 0;
     font-family: Consolas, monaco, monospace;
+}
+
+.alert-error, .alert-info, .alert-success, .alert-warning{
+    display : block;
+    color : white;
+    font-style: oblique;
+    padding : 2%;
+    max-width : 100%;
+}
+
+.alert-error{
+    background-color: red;
+}
+.alert-info {
+    background-color: dodgerblue;
+}
+.alert-success {
+    background-color: green;
+}
+.alert-warning {
+    background-color: orange;
+}
+
+table{
+    margin-top : 10px;
+}
+table.simple-tab{
+    border-collapse: collapse;
+    text-align: center;
+}
+table.simple-tab, th, td, tr {
+    border: 1px solid black;
+    padding : 10px 20px;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table.altern-tab tr:nth-child(2n+1){
+    background-color: lightblue;
+}
+
+table.active-tab tr:hover{
+    background-color : lightblue;
 }
