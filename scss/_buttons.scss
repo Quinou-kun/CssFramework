@@ -1,22 +1,22 @@
-@import "reset";
 @import "variables";
 
 
-$btnBackgroundColor : #cacaca;
-$btnPadding : 1em;
-$btnLineHeight : 1em;
-$btnFontSize : 1em;
-$btnColor : black;
-$btnBorder : 1px solid dimgrey;
-$btnBorderRadius : 10px;
-$btnOutline : none;
-$btnHoverBackgroundColor : lightgray;
-$btnHoverBoxShadow : 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19);
-$btnHoverCursor : pointer;
-$btnActiveTransform : translateY(1px);
-$btnSmallFontSize : 75%;
-$btnSmallLineHeight : 75%;
-$btnSmallPadding : 0.5em;
+$btnBackgroundColor : #cacaca !default;
+$btnPadding : 1em !default;
+$btnLineHeight : 1em !default;
+$btnFontSize : 1em !default;
+$btnColor : black !default;
+$btnBorder : 1px solid dimgrey !default;
+$btnBorderRadius : 10px !default;
+$btnOutline : none !default;
+$btnHoverBackgroundColor : lightgray !default;
+$btnHoverBoxShadow : 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19) !default;
+$btnHoverCursor : pointer !default;
+$btnActiveTransform : translateY(1px) !default;
+$btnSmallFontSize : 75% !default;
+$btnSmallLineHeight : 75% !default;
+$btnSmallPadding : 0.5em !default;
+
 
 .btn{
   padding: $btnPadding;
@@ -41,7 +41,7 @@ $btnSmallPadding : 0.5em;
   transform: $btnActiveTransform;
 }
 
-.small{
+button.small{
   font-size: $btnSmallFontSize;
   line-height: $btnSmallLineHeight;
   padding: 0.5em ;
@@ -49,64 +49,64 @@ $btnSmallPadding : 0.5em;
   border: 1px solid dimgrey;
 }
 
-.large{
+button.large{
   font-size: 150%;
   line-height: 150%;
   padding: 1.5em ;
   border-radius: 15px;
   border: 1px solid dimgrey;
 }
-.blue{
+button.blue{
   background-color: blue;
   color : midnightblue;
   border-color: midnightblue  ;
 }
-.blue:hover{
+button.blue:hover{
   background-color: midnightblue;
   color: aqua;
 }
 
-.red {
+button.red {
   background-color: red;
   color: darkred;
   border-color:darkred ;
 }
-.red:hover{
+button.red:hover{
   background-color: darkred;
   color: #ff002d;
 }
 
-.green{
+button.green{
   background-color: green;
   color : #004b00;
   border-color: #004b00;
 }
-.green:hover{
+button.green:hover{
   background-color: darkgreen;
   color : chartreuse;
 }
 
-.flat{
+button.flat{
   border: none;
   border-radius: 0%;
 }
-.flat:hover{
+button.flat:hover{
   box-shadow: none;
 }
-.flat:active{
+button.flat:active{
   transform: none;
 }
 
-.extraLarge{
+button.extraLarge{
   width : 100%;
   margin : auto;
 }
 
-.fancy{
+button.fancy{
   transition: transform 1s;
 }
-.fancy:hover{
+button.fancy:hover{
 }
-.fancy:focus{
+button.fancy:focus{
   transform: rotate(360deg) scale(1.5);
 }

@@ -1,0 +1,28 @@
+@import "variables";
+
+$alertFontStyle : oblique !default;
+$alertErrorBackgroundColor : red !default;
+$alertInfoBackgroundColor : dodgerblue !default;
+$alertSuccessBackgroundColor : green !default;
+$alertWarningBackgroundColor : orange !default;
+
+.alert-error, .alert-info, .alert-success, .alert-warning{
+  display : block;
+  color : white;
+  font-style: $alertFontStyle;
+  padding : 2%;
+  max-width : 100%;
+}
+
+.alert-error{
+  background-color: $alertErrorBackgroundColor;
+}
+.alert-info {
+  background-color: $alertInfoBackgroundColor;
+}
+.alert-success {
+  background-color: $alertSuccessBackgroundColor;
+}
+.alert-warning {
+  background-color: $alertWarningBackgroundColor;
+}

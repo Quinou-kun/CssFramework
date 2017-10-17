@@ -1,33 +1,39 @@
-/*reset*/
-html, body, div, span, applet, object, iframe,
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  outline: 0;
   font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+  vertical-align: baseline;
+  background: transparent; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
   list-style: none; }
 
 blockquote, q {
@@ -35,56 +41,51 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: ’’;
   content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+a {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  background: transparent; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
 
-body {
-  line-height: 1; }
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
 
-ol, ul {
-  list-style: none; }
+del {
+  text-decoration: line-through; }
 
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -94,50 +95,57 @@ body {
   margin: auto; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black;
   font-weight: bold;
   margin: 20px;
   display: block; }
 
 h1 {
+  color: black;
   font-size: 50px; }
 
 h1.small, h1 small {
+  color: grey;
   font-size: 40px; }
 
 h2 {
+  color: black;
   font-size: 40px; }
 
 h2.small, h2 small {
+  color: grey;
   font-size: 32px; }
 
 h3 {
+  color: black;
   font-size: 35px; }
 
 h3.small, h3 small {
+  color: grey;
   font-size: 28px; }
 
 h4 {
+  color: black;
   font-size: 28px; }
 
 h4.small, h4 small {
+  color: grey;
   font-size: 22px; }
 
 h5 {
+  color: black;
   font-size: 20px; }
 
 h5.small, h5 small {
+  color: grey;
   font-size: 16px; }
 
 h6 {
+  color: black;
   font-size: 15px; }
 
 h6.small, h6 small {
+  color: grey;
   font-size: 12px; }
-
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
-h1.small, h2.small, h3.small, h4.small, h5.small, h6.small {
-  color: grey; }
 
 p {
   margin-bottom: 25px; }
@@ -260,7 +268,7 @@ table.active-tab tr:hover {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  background-color: lightskyblu;
+  background-color: lightskyblue;
   list-style: none;
   display: flex;
   flex-direction: column; }
@@ -303,49 +311,24 @@ table.active-tab tr:hover {
   .navbar > li {
     flex-grow: 0;
     flex-shrink: 0; } }
-/*reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+.alert-error, .alert-info, .alert-success, .alert-warning {
+  display: block;
+  color: white;
+  font-style: oblique;
+  padding: 2%;
+  max-width: 100%; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+.alert-error {
+  background-color: red; }
 
-body {
-  line-height: 1; }
+.alert-info {
+  background-color: dodgerblue; }
 
-ol, ul {
-  list-style: none; }
+.alert-success {
+  background-color: green; }
 
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+.alert-warning {
+  background-color: orange; }
 
 .btn {
   padding: 1em;
@@ -366,65 +349,65 @@ table {
 .btn:active {
   transform: translateY(1px); }
 
-.small {
+button.small {
   font-size: 75%;
   line-height: 75%;
   padding: 0.5em;
   border-radius: 5px;
   border: 1px solid dimgrey; }
 
-.large {
+button.large {
   font-size: 150%;
   line-height: 150%;
   padding: 1.5em;
   border-radius: 15px;
   border: 1px solid dimgrey; }
 
-.blue {
+button.blue {
   background-color: blue;
   color: midnightblue;
   border-color: midnightblue; }
 
-.blue:hover {
+button.blue:hover {
   background-color: midnightblue;
   color: aqua; }
 
-.red {
+button.red {
   background-color: red;
   color: darkred;
   border-color: darkred; }
 
-.red:hover {
+button.red:hover {
   background-color: darkred;
   color: #ff002d; }
 
-.green {
+button.green {
   background-color: green;
   color: #004b00;
   border-color: #004b00; }
 
-.green:hover {
+button.green:hover {
   background-color: darkgreen;
   color: chartreuse; }
 
-.flat {
+button.flat {
   border: none;
   border-radius: 0%; }
 
-.flat:hover {
+button.flat:hover {
   box-shadow: none; }
 
-.flat:active {
+button.flat:active {
   transform: none; }
 
-.extraLarge {
+button.extraLarge {
   width: 100%;
   margin: auto; }
 
-.fancy {
+button.fancy {
   transition: transform 1s; }
 
-.fancy:focus {
+button.fancy:focus {
   transform: rotate(360deg) scale(1.5); }
 
 /*# sourceMappingURL=main.css.map */

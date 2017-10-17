@@ -1,12 +1,41 @@
 @import "variables";
-@import "reset";
 
 $bodyFontFamily : Arial, "Helvetica Neue", Helvetica, sans-serif !default;
-$bodyColor : black;
-$bodyBackgroundColor : white;
-$bodyWidth : 100%;
-$hColor : black;
-$hFontWeight : bold;
+$bodyColor : black !default;
+$bodyBackgroundColor : white !default;
+$bodyWidth : 100% !default;
+$h1Color : black !default;
+$h2Color : black !default;
+$h3Color : black !default;
+$h4Color : black !default;
+$h5Color : black !default;
+$h6Color : black !default;
+$h1SmallColor : grey !default;
+$h2SmallColor : grey !default;
+$h3SmallColor : grey !default;
+$h4SmallColor : grey !default;
+$h5SmallColor : grey !default;
+$h6SmallColor : grey !default;
+$hFontWeight : bold !default;
+$markBackgroundColor : yellow !default;
+$delTextDecoration : line-through !default;
+$delColor : red !default;
+$UTextDecoration : underline !default;
+$strongFontWeight : bold !default;
+$emFontStyle : italic !default;
+$abbrFontWeight : bold !default;
+$abbrTextDecoration : underline !default;
+$abbrTextDecorationStyle : dotted !default;
+$blockquoteFontStyle : italic !default;
+$blockquoteBackgroundColor : lightgrey !default;
+$blockquoteFontSize : 1.2em !default;
+$blockquoteBorder : 1px dotted black !default;
+$codeBackgroundColor : black !default;
+$codeColor : white !default;
+$codeBorderLeft : 8px solid darkolivegreen !default;
+$tableBorder : 1px solid black !default;
+$alternTableBackground : lightblue !default;
+$hoverTableBackground : lightblue !default;
 
 body {
   font-family: $bodyFontFamily;
@@ -18,55 +47,60 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6{
-  color : $hColor;
   font-weight: $hFontWeight;
   margin : 20px;
   display : block;
 }
 
-
 h1{
+  color : $h1Color;
   font-size : 50px;
 }
 h1.small, h1 small{
+  color : $h1SmallColor;
   font-size : 40px;
 }
 h2{
+  color : $h2Color;
   font-size : 40px;
 }
 h2.small, h2 small{
+  color : $h2SmallColor;
   font-size : 32px;
 }
 h3{
+  color : $h3Color;
   font-size : 35px;
 }
 h3.small, h3 small{
+  color : $h3SmallColor;
   font-size : 28px;
 }
 h4{
+  color : $h4Color;
   font-size : 28px;
 }
 h4.small, h4 small{
+  color : $h4SmallColor;
   font-size : 22px;
 }
 
 h5{
+  color : $h5Color;
   font-size : 20px;
 }
 h5.small, h5 small{
+  color : $h5SmallColor;
   font-size : 16px;
 }
 
 h6{
+  color : $h6Color;
   font-size : 15px;
 }
 h6.small, h6 small{
+  color : $h6SmallColor;
   font-size : 12px;
-}
-
-h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,
-h1.small,h2.small,h3.small,h4.small,h5.small,h6.small {
-  color: grey;
 }
 
 p{
@@ -74,30 +108,30 @@ p{
 }
 
 mark {
-  background-color: yellow;
+  background-color: $markBackgroundColor;
 }
 
 del{
-  text-decoration: line-through;
-  color : red;
+  text-decoration: $delTextDecoration;
+  color : $delColor;
 }
 
 u{
-  text-decoration: underline;
+  text-decoration: $UTextDecoration;
 }
 
 strong{
-  font-weight: bold;
+  font-weight: $strongFontWeight;
 }
 
 em{
-  font-style: italic;
+  font-style: $emFontStyle;
 }
 
 abbr{
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-style: dotted;
+  font-weight: $abbrFontWeight;
+  text-decoration: $abbrTextDecoration;
+  text-decoration-style: $abbrTextDecorationStyle;
 }
 
 .align-left{
@@ -148,11 +182,11 @@ blockquote{
   display : block;
   text-align : center;
   margin: 3% 12%;
-  font-style: italic;
-  background-color : lightgrey;
+  font-style: $blockquoteFontStyle;
+  background-color : $blockquoteBackgroundColor;
   padding : 2%;
-  font-size : 1.2em;
-  border : 1px dotted black;
+  font-size : $blockquoteFontSize;
+  border : $blockquoteBorder;
 }
 blockquote:before{
   content : "\" "
@@ -167,9 +201,9 @@ code{
   display : block;
   margin : 3% 12%;
   padding : 1%;
-  background-color : black;
-  color : white;
-  border-left : 8px solid darkolivegreen;
+  background-color : $codeBackgroundColor;
+  color : $codeColor;
+  border-left : $codeBorderLeft;
 }
 
 pre{
@@ -186,12 +220,14 @@ kbd{
 table{
   margin-top : 10px;
 }
+
 table.simple-tab{
   border-collapse: collapse;
   text-align: center;
 }
+
 table.simple-tab, th, td, tr {
-  border: 1px solid black;
+  border: $tableBorder;
   padding : 10px 20px;
 }
 
@@ -200,9 +236,9 @@ table th {
 }
 
 table.altern-tab tr:nth-child(2n+1){
-  background-color: lightblue;
+  background-color: $alternTableBackground;
 }
 
 table.active-tab tr:hover{
-  background-color : lightblue;
+  background-color : $hoverTableBackground;
 }
