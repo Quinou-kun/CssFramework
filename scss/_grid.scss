@@ -1,0 +1,44 @@
+@for $i from 1 through $gridColumns {
+
+  div.col-sm-#{$i} {
+    width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
+    background-color: deeppink;
+    float : left;
+    margin: 0.5%;
+    padding: 0.5%;
+  }
+
+}
+
+.wrapper{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px){
+  @for $i from 1 through $gridColumns {
+
+    div.col-md-#{$i} {
+      width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
+      background-color: deeppink;
+      float : left;
+      margin: 0.5%;
+      padding: 0.5%;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1000px){
+  @for $i from 1 through $gridColumns {
+
+    div.col-lg-#{$i} {
+      width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
+      background-color: deeppink;
+      float : left;
+      margin: 0.5%;
+      padding: 0.5%;
+    }
+
+  }
+}
