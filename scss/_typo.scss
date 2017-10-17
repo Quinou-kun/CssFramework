@@ -159,6 +159,7 @@ blockquote:after{
 }
 
 code{
+  overflow: scroll;
   white-space: pre;
   font-family: Consolas, monaco, monospace;
   display : block;
