@@ -1,24 +1,8 @@
 @import "variables";
 
 
-$btnBackgroundColor : #cacaca !default;
-$btnPadding : 1em !default;
-$btnLineHeight : 1em !default;
-$btnFontSize : 1em !default;
-$btnColor : black !default;
-$btnBorder : 1px solid dimgrey !default;
-$btnBorderRadius : 10px !default;
-$btnOutline : none !default;
-$btnHoverBackgroundColor : lightgray !default;
-$btnHoverBoxShadow : 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19) !default;
-$btnHoverCursor : pointer !default;
-$btnActiveTransform : translateY(1px) !default;
-$btnSmallFontSize : 75% !default;
-$btnSmallLineHeight : 75% !default;
-$btnSmallPadding : 0.5em !default;
-
-
 .btn{
+  margin : 5px;
   padding: $btnPadding;
   font-size: $btnFontSize;
   line-height: $btnLineHeight;
@@ -44,46 +28,42 @@ $btnSmallPadding : 0.5em !default;
 button.small{
   font-size: $btnSmallFontSize;
   line-height: $btnSmallLineHeight;
-  padding: 0.5em ;
-  border-radius: 5px;
-  border: 1px solid dimgrey;
+  padding: $btnSmallPadding;
+  border-radius: $btnSmallBorderRadius;
+  border: $btnSmallBorder;
 }
 
+
 button.large{
-  font-size: 150%;
-  line-height: 150%;
-  padding: 1.5em ;
-  border-radius: 15px;
-  border: 1px solid dimgrey;
+  font-size: $btnLargeFontSize;
+  line-height: $btnLargeLineHeight;
+  padding: $btnLargePadding;
+  border-radius: $btnLargeBorderRadius;
+  border: $btnLargeBorder;
 }
+
 button.blue{
-  background-color: blue;
-  color : midnightblue;
-  border-color: midnightblue  ;
+  background-color: dodgerblue;
+  color : white;
 }
 button.blue:hover{
-  background-color: midnightblue;
-  color: aqua;
+  background-color: darken(dodgerblue,10);
 }
 
 button.red {
   background-color: red;
-  color: darkred;
-  border-color:darkred ;
+  color: white;
 }
 button.red:hover{
-  background-color: darkred;
-  color: #ff002d;
+  background-color: darken(red,10);
 }
 
 button.green{
   background-color: green;
-  color : #004b00;
-  border-color: #004b00;
+  color : white;
 }
 button.green:hover{
-  background-color: darkgreen;
-  color : chartreuse;
+  background-color: darken(green,10);
 }
 
 button.flat{
@@ -107,6 +87,7 @@ button.fancy{
 }
 button.fancy:hover{
 }
-button.fancy:focus{
+
+button.fancy:hover{
   transform: rotate(360deg) scale(1.5);
 }

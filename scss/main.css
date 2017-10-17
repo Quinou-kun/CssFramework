@@ -227,6 +227,7 @@ blockquote:after {
   content: ' "'; }
 
 code {
+  white-space: pre;
   font-family: Consolas, monaco, monospace;
   display: block;
   margin: 3% 12%;
@@ -265,10 +266,10 @@ table.active-tab tr:hover {
   background-color: lightblue; }
 
 .navbar {
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   padding: 0;
-  background-color: lightskyblue;
+  background-color: #c2c2c2;
   list-style: none;
   display: flex;
   flex-direction: column; }
@@ -285,7 +286,7 @@ table.active-tab tr:hover {
   width: 100%; }
 
 .navbar > li.active {
-  background-color: dodgerblue; }
+  background-color: darkgray; }
 
 .navbar > li.disabled {
   pointer-events: none;
@@ -293,9 +294,9 @@ table.active-tab tr:hover {
   opacity: 0.6; }
 
 .navbar > li:hover {
-  background-color: dodgerblue; }
+  background-color: darkgray; }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .navbar {
     font-size: 1.2em;
     flex-direction: row; }
@@ -303,7 +304,7 @@ table.active-tab tr:hover {
   .navbar > li {
     flex-grow: 1;
     flex-shrink: 1; } }
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .navbar {
     flex-direction: row;
     justify-content: flex-end; }
@@ -331,19 +332,20 @@ table.active-tab tr:hover {
   background-color: orange; }
 
 .btn {
+  margin: 5px;
   padding: 1em;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
-  background-color: #cacaca;
+  background-color: white;
   color: black;
-  border: 1px solid dimgrey;
-  border-radius: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
   outline: none; }
 
 .btn:hover {
-  background-color: lightgray;
-  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.24), 0 15px 40px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer; }
 
 .btn:active {
@@ -354,41 +356,35 @@ button.small {
   line-height: 75%;
   padding: 0.5em;
   border-radius: 5px;
-  border: 1px solid dimgrey; }
+  border: 1px solid lightgray; }
 
 button.large {
   font-size: 150%;
   line-height: 150%;
   padding: 1.5em;
-  border-radius: 15px;
-  border: 1px solid dimgrey; }
+  border-radius: 10px;
+  border: 1px solid lightgray; }
 
 button.blue {
-  background-color: blue;
-  color: midnightblue;
-  border-color: midnightblue; }
+  background-color: dodgerblue;
+  color: white; }
 
 button.blue:hover {
-  background-color: midnightblue;
-  color: aqua; }
+  background-color: #0077ea; }
 
 button.red {
   background-color: red;
-  color: darkred;
-  border-color: darkred; }
+  color: white; }
 
 button.red:hover {
-  background-color: darkred;
-  color: #ff002d; }
+  background-color: #cc0000; }
 
 button.green {
   background-color: green;
-  color: #004b00;
-  border-color: #004b00; }
+  color: white; }
 
 button.green:hover {
-  background-color: darkgreen;
-  color: chartreuse; }
+  background-color: #004d00; }
 
 button.flat {
   border: none;
@@ -407,7 +403,7 @@ button.extraLarge {
 button.fancy {
   transition: transform 1s; }
 
-button.fancy:focus {
+button.fancy:hover {
   transform: rotate(360deg) scale(1.5); }
 
 /*# sourceMappingURL=main.css.map */

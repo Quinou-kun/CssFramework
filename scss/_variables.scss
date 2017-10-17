@@ -1,150 +1,82 @@
-//NAVBAR
 
-//To change navbar link font weight
-//$navFontWeight : bold;
-
-//To change navbar background color
-//$navBackground : lightskyblue;
-
-//To change navbar active link background color
-//$activeNavBackground : dodgerblue;
-
-//To change navbar hover link background color
-//$hoverNavBackground : dodgerblue;
-
-//-------------------------------------------------------
-
-//ALERTS
-
-//To change error font-style
-//$alertFontStyle : oblique;
-
-// To change Error alert background color
-//$alertErrorBackgroundColor : red;
-
-// To change Info alert background color
-//$alertInfoBackgroundColor : dodgerblue;
-
-// To change Success alert background color
-//$alertSuccessBackgroundColor : green;
-
-// To change Warning alert background color
-//$alertWarningBackgroundColor : orange;
-
-//-------------------------------------------------------
-
-////TYPO
-
-// To change Body font family
-//$bodyFontFamily : Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-// To change Body color
-//$bodyColor : black;
-
-// To change Body background color
-//$bodyBackgroundColor : white;
-
-// To change body width
-//$bodyWidth : 100%;
-
-// To change h1 color
-//$h1Color : black;
-
-// To change h2 color
-//$h2Color : black;
-
-// To change h3 color
-//$h3Color : black;
-
-// To change h4 color
-//$h4Color : black;
-
-// To change h5 color
-//$h5Color : black;
-
-// To change h6 tag color
-//$h6Color : black;
-
-// To change small h1 color
-//$h1SmallColor : black;
-
-// To change small h2 color
-//$h2SmallColor : black;
-
-// To change small h3 color
-//$h3SmallColor : black;
-
-// To change small h4 color
-//$h4SmallColor : black;
-
-// To change small h5 color
-//$h5SmallColor : black;
-
-// To change small h6 tag color
-//$h6SmallColor : black;
-
-// To change h tag font weight
-//$hFontWeight : bold;
-
-//To change mark tag background color
-//$markBackgroundColor : yellow;
-
-//To change del tag text decoration
-//$delTextDecoration : line-through;
-
-//To change del tag color
-//$delColor : red;
-
-//To change u tag text decoration
-//$UTextDecoration : underline;
-
-//To change strong tag font weight
-//$strongFontWeight : bold;
-
-//To change em tag font style
-//$emFontStyle : italic;
-
-//To change abbr tag font weight
-//$abbrFontWeight : bold;
-
-//To change abbr tag text decoration
-//$abbrTextDecoration : underline;
-
-//To change abbr tag text decoration style
-//$abbrTextDecorationStyle : dotted !default;
-
-//To change blockquote font style
-//$blockquoteFontStyle : italic !default;
-
-//To change blockquote background color
-//$blockquoteBackgroundColor : lightgrey;
-
-//To change blockquote font size
-//$blockquoteFontSize : 1.2em;
-
-//To change blockquote border
-//$blockquoteBorder : 1px dotted black;
-
-//To change code tag background color
-//$codeBackgroundColor : black;
-
-//To change code tag color
-//$codeColor : white;
-
-//To change code tag border left
-//$codeBorderLeft : 8px solid darkolivegreen;
-
-//To change table boder
-//$tableBorder : 1px solid black;
-
-//To change altern table background color
-//$alternTableBackground : lightblue;
-
-//To change table hover background color
-//$hoverTableBackground : lightblue;
-
-//-------------------------------------------------------
-
-//BUTTONS
+//---------------------TYPO--------------------------//
+$bodyFontFamily : Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$bodyColor : black !default;
+$bodyBackgroundColor : white !default;
+$bodyWidth : 100% !default;
+$h1Color : black !default;
+$h2Color : black !default;
+$h3Color : black !default;
+$h4Color : black !default;
+$h5Color : black !default;
+$h6Color : black !default;
+$h1SmallColor : grey !default;
+$h2SmallColor : grey !default;
+$h3SmallColor : grey !default;
+$h4SmallColor : grey !default;
+$h5SmallColor : grey !default;
+$h6SmallColor : grey !default;
+$hFontWeight : bold !default;
+$markBackgroundColor : yellow !default;
+$delTextDecoration : line-through !default;
+$delColor : red !default;
+$UTextDecoration : underline !default;
+$strongFontWeight : bold !default;
+$emFontStyle : italic !default;
+$abbrFontWeight : bold !default;
+$abbrTextDecoration : underline !default;
+$abbrTextDecorationStyle : dotted !default;
+$blockquoteFontStyle : italic !default;
+$blockquoteBackgroundColor : lightgrey !default;
+$blockquoteFontSize : 1.2em !default;
+$blockquoteBorder : 1px dotted black !default;
+$codeBackgroundColor : black !default;
+$codeColor : white !default;
+$codeBorderLeft : 8px solid darkolivegreen !default;
+$tableBorder : 1px solid black !default;
+$alternTableBackground : lightblue !default;
+$hoverTableBackground : lightblue !default;
 
 
+//---------------------NAVBAR--------------------------//
+
+$navFontWeight : normal !default;
+$navBackground : #c2c2c2 !default;
+$activeNavBackground : darken($navBackground, 10) !default;
+$hoverNavBackground : $activeNavBackground !default;
+
+
+//---------------------ALERT--------------------------//
+
+$alertFontStyle : oblique !default;
+$alertErrorBackgroundColor : red !default;
+$alertInfoBackgroundColor : dodgerblue !default;
+$alertSuccessBackgroundColor : green !default;
+$alertWarningBackgroundColor : orange !default;
+
+
+//---------------------BUTTONS--------------------------//
+
+$btnBackgroundColor : white !default;
+$btnPadding : 1em !default;
+$btnLineHeight : 1em !default;
+$btnFontSize : 1em !default;
+$btnColor : black !default;
+$btnBorder : 1px solid lightgray !default;
+$btnBorderRadius : 5px !default;
+$btnOutline : none !default;
+$btnHoverBackgroundColor : #f2f2f2 !default;
+$btnHoverBoxShadow : 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1) !default;
+$btnHoverCursor : pointer !default;
+$btnActiveTransform : translateY(1px) !default;
+$btnSmallFontSize : 75% !default;
+$btnSmallLineHeight : 75% !default;
+$btnSmallPadding : 0.5em !default;
+$btnSmallPadding : 0.5em !default;
+$btnSmallBorderRadius : 5px !default;
+$btnSmallBorder : $btnBorder !default;
+$btnLargeFontSize : 150% !default;
+$btnLargeLineHeight : 150% !default;
+$btnLargePadding : 1.5em !default;
+$btnLargeBorderRadius : 10px !default;
+$btnLargeBorder : $btnBorder !default;

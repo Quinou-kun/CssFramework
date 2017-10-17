@@ -1,42 +1,5 @@
 @import "variables";
 
-$bodyFontFamily : Arial, "Helvetica Neue", Helvetica, sans-serif !default;
-$bodyColor : black !default;
-$bodyBackgroundColor : white !default;
-$bodyWidth : 100% !default;
-$h1Color : black !default;
-$h2Color : black !default;
-$h3Color : black !default;
-$h4Color : black !default;
-$h5Color : black !default;
-$h6Color : black !default;
-$h1SmallColor : grey !default;
-$h2SmallColor : grey !default;
-$h3SmallColor : grey !default;
-$h4SmallColor : grey !default;
-$h5SmallColor : grey !default;
-$h6SmallColor : grey !default;
-$hFontWeight : bold !default;
-$markBackgroundColor : yellow !default;
-$delTextDecoration : line-through !default;
-$delColor : red !default;
-$UTextDecoration : underline !default;
-$strongFontWeight : bold !default;
-$emFontStyle : italic !default;
-$abbrFontWeight : bold !default;
-$abbrTextDecoration : underline !default;
-$abbrTextDecorationStyle : dotted !default;
-$blockquoteFontStyle : italic !default;
-$blockquoteBackgroundColor : lightgrey !default;
-$blockquoteFontSize : 1.2em !default;
-$blockquoteBorder : 1px dotted black !default;
-$codeBackgroundColor : black !default;
-$codeColor : white !default;
-$codeBorderLeft : 8px solid darkolivegreen !default;
-$tableBorder : 1px solid black !default;
-$alternTableBackground : lightblue !default;
-$hoverTableBackground : lightblue !default;
-
 body {
   font-family: $bodyFontFamily;
   color : $bodyColor;
@@ -197,6 +160,7 @@ blockquote:after{
 }
 
 code{
+  white-space: pre;
   font-family: Consolas, monaco, monospace;
   display : block;
   margin : 3% 12%;
