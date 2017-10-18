@@ -1,0 +1,26 @@
+@mixin btn-struct($padding, $border){
+  margin : 5px;
+  outline: none;
+  border: $border;
+  padding: $padding;
+}
+
+@mixin btn-style( $backgroundColor, $color, $borderRadius, $hoverBackgroundColor, $hoverBoxShadow, $hoverCursor, $activeTransform ){
+  color: $color;
+  border-radius: $borderRadius;
+  background-color: $backgroundColor;
+  &:hover{
+    cursor: $hoverCursor;
+    box-shadow: $hoverBoxShadow;
+    background-color: $hoverBackgroundColor;
+  }
+  &:active{
+    transform: $activeTransform;
+  }
+}
+
+@mixin btn-text($fontSize, $lineHeight ){
+  text-align: center;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

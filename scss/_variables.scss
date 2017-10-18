@@ -53,7 +53,18 @@ $alertErrorBackgroundColor : red !default;
 $alertInfoBackgroundColor : dodgerblue !default;
 $alertSuccessBackgroundColor : green !default;
 $alertWarningBackgroundColor : orange !default;
-
+@mixin btn_default($btnPadding, $btnFontSize, $btnLineHeight, $btnBackgroundColor, $btnColor, $btnBorder, $btnBorderRadius){
+  margin : 5px;
+  padding: $btnPadding;
+  font-size: $btnFontSize;
+  line-height: $btnLineHeight;
+  text-align: center;
+  background-color: $btnBackgroundColor;
+  color: $btnColor;
+  border: $btnBorder;
+  border-radius: $btnBorderRadius;
+  outline: none;
+}
 
 //---------------------BUTTONS--------------------------//
 
@@ -64,14 +75,12 @@ $btnFontSize : 1em !default;
 $btnColor : black !default;
 $btnBorder : 1px solid lightgray !default;
 $btnBorderRadius : 5px !default;
-$btnOutline : none !default;
 $btnHoverBackgroundColor : #f2f2f2 !default;
 $btnHoverBoxShadow : 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1) !default;
 $btnHoverCursor : pointer !default;
 $btnActiveTransform : translateY(1px) !default;
 $btnSmallFontSize : 75% !default;
 $btnSmallLineHeight : 75% !default;
-$btnSmallPadding : 0.5em !default;
 $btnSmallPadding : 0.5em !default;
 $btnSmallBorderRadius : 5px !default;
 $btnSmallBorder : $btnBorder !default;

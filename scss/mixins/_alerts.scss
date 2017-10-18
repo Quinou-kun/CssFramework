@@ -1,0 +1,15 @@
+
+.alert-error, .alert-info, .alert-success, .alert-warning{
+
+}
+
+
+
+@mixin alert-struct($fontStyle, $backgroundColor){
+  display : block;
+  color : white;
+  font-style: $fontStyle;
+  background-color: $backgroundColor;
+  padding : 2%;
+  max-width : 100%;
+}

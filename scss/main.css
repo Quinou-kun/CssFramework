@@ -87,6 +87,137 @@ hr {
 input, select {
   vertical-align: middle; }
 
+button.btn, button.blue, button.red, button.green, button.extraLarge, button.fancy {
+  margin: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 1em;
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1em; }
+  button.btn:hover, button.blue:hover, button.red:hover, button.green:hover, button.extraLarge:hover, button.fancy:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; }
+  button.btn:active, button.blue:active, button.red:active, button.green:active, button.extraLarge:active, button.fancy:active {
+    transform: translateY(1px); }
+
+button.small {
+  margin: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 0.5em;
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  font-size: 75%;
+  line-height: 75%; }
+  button.small:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; }
+  button.small:active {
+    transform: translateY(1px); }
+
+button.large {
+  margin: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 1.5em;
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 150%;
+  line-height: 150%; }
+  button.large:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; }
+  button.large:active {
+    transform: translateY(1px); }
+
+button.blue {
+  color: white;
+  background-color: dodgerblue; }
+  button.blue:hover {
+    background-color: #0077ea; }
+
+button.red {
+  color: white;
+  background-color: red; }
+  button.red:hover {
+    background-color: #cc0000; }
+
+button.green {
+  color: white;
+  background-color: green; }
+  button.green:hover {
+    background-color: #004d00; }
+
+button.flat {
+  margin: 5px;
+  outline: none;
+  border: none;
+  padding: 1em;
+  color: black;
+  border-radius: 0;
+  background-color: white;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1em; }
+  button.flat:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #f2f2f2; }
+  button.flat:active {
+    transform: none; }
+
+button.extraLarge {
+  width: 100%;
+  margin: auto; }
+
+button.fancy {
+  transition: transform 1s; }
+  button.fancy:hover {
+    transform: rotate(360deg) scale(1.5); }
+
+.alert-error {
+  display: block;
+  color: white;
+  font-style: oblique;
+  background-color: red;
+  padding: 2%;
+  max-width: 100%; }
+
+.alert-info {
+  display: block;
+  color: white;
+  font-style: oblique;
+  background-color: dodgerblue;
+  padding: 2%;
+  max-width: 100%; }
+
+.alert-success {
+  display: block;
+  color: white;
+  font-style: oblique;
+  background-color: green;
+  padding: 2%;
+  max-width: 100%; }
+
+.alert-warning {
+  display: block;
+  color: white;
+  font-style: oblique;
+  background-color: orange;
+  padding: 2%;
+  max-width: 100%; }
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black;
@@ -313,180 +444,74 @@ table.active-tab tr:hover {
   .navbar > li {
     flex-grow: 0;
     flex-shrink: 0; } }
-.alert-error, .alert-info, .alert-success, .alert-warning {
-  display: block;
-  color: white;
-  font-style: oblique;
-  padding: 2%;
-  max-width: 100%; }
-
-.alert-error {
-  background-color: red; }
-
-.alert-info {
-  background-color: dodgerblue; }
-
-.alert-success {
-  background-color: green; }
-
-.alert-warning {
-  background-color: orange; }
-
-.btn {
-  margin: 5px;
-  padding: 1em;
-  font-size: 1em;
-  line-height: 1em;
-  text-align: center;
-  background-color: white;
-  color: black;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  outline: none; }
-
-.btn:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
-  cursor: pointer; }
-
-.btn:active {
-  transform: translateY(1px); }
-
-button.small {
-  font-size: 75%;
-  line-height: 75%;
-  padding: 0.5em;
-  border-radius: 5px;
-  border: 1px solid lightgray; }
-
-button.large {
-  font-size: 150%;
-  line-height: 150%;
-  padding: 1.5em;
-  border-radius: 10px;
-  border: 1px solid lightgray; }
-
-button.blue {
-  background-color: dodgerblue;
-  color: white; }
-
-button.blue:hover {
-  background-color: #0077ea; }
-
-button.red {
-  background-color: red;
-  color: white; }
-
-button.red:hover {
-  background-color: #cc0000; }
-
-button.green {
-  background-color: green;
-  color: white; }
-
-button.green:hover {
-  background-color: #004d00; }
-
-button.flat {
-  border: none;
-  border-radius: 0%; }
-
-button.flat:hover {
-  box-shadow: none; }
-
-button.flat:active {
-  transform: none; }
-
-button.extraLarge {
-  width: 100%;
-  margin: auto; }
-
-button.fancy {
-  transition: transform 1s; }
-
-button.fancy:hover {
-  transform: rotate(360deg) scale(1.5); }
-
 div.col-sm-1 {
   width: 6.3333333333%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-2 {
   width: 14.6666666667%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-3 {
   width: 23%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-4 {
   width: 31.3333333333%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-5 {
   width: 39.6666666667%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-6 {
   width: 48%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-7 {
   width: 56.3333333333%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-8 {
   width: 64.6666666667%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-9 {
   width: 73%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-10 {
   width: 81.3333333333%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-11 {
   width: 89.6666666667%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
 
 div.col-sm-12 {
   width: 98%;
-  background-color: deeppink;
   float: left;
   margin: 0.5%;
   padding: 0.5%; }
@@ -498,168 +523,144 @@ div.col-sm-12 {
 @media screen and (min-width: 600px) {
   div.col-md-1 {
     width: 6.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-2 {
     width: 14.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-3 {
     width: 23%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-4 {
     width: 31.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-5 {
     width: 39.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-6 {
     width: 48%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-7 {
     width: 56.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-8 {
     width: 64.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-9 {
     width: 73%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-10 {
     width: 81.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-11 {
     width: 89.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-md-12 {
     width: 98%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; } }
 @media screen and (min-width: 1000px) {
   div.col-lg-1 {
     width: 6.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-2 {
     width: 14.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-3 {
     width: 23%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-4 {
     width: 31.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-5 {
     width: 39.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-6 {
     width: 48%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-7 {
     width: 56.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-8 {
     width: 64.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-9 {
     width: 73%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-10 {
     width: 81.3333333333%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-11 {
     width: 89.6666666667%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; }
 
   div.col-lg-12 {
     width: 98%;
-    background-color: deeppink;
     float: left;
     margin: 0.5%;
     padding: 0.5%; } }

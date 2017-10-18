@@ -1,0 +1,14 @@
+@import "mixins/alerts";
+
+.alert-error{
+  @include alert-struct( $alertFontStyle, $alertErrorBackgroundColor );
+}
+.alert-info {
+  @include alert-struct( $alertFontStyle, $alertInfoBackgroundColor );
+}
+.alert-success {
+  @include alert-struct( $alertFontStyle, $alertSuccessBackgroundColor );
+}
+.alert-warning {
+  @include alert-struct( $alertFontStyle, $alertWarningBackgroundColor );
+}
