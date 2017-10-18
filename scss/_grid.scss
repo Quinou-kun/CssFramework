@@ -1,3 +1,8 @@
+.wrapper{
+  width: 100%;
+  box-sizing: border-box;
+}
+
 @for $i from 1 through $gridColumns {
 
   div.col-sm-#{$i} {
@@ -9,10 +14,16 @@
 
 }
 
-.wrapper{
-  width: 100%;
-  box-sizing: border-box;
+@for $i from 1 through $gridColumns - 1 {
+  div.offset-#{$i} {
+    width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
+    float : left;
+    margin: 0.5%;
+    padding: 0.5%;
+  }
 }
+
+
 
 @media screen and (min-width: 600px){
   @for $i from 1 through $gridColumns {
@@ -39,3 +50,5 @@
 
   }
 }
+
+
