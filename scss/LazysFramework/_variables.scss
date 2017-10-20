@@ -91,4 +91,6 @@ $btnLargeBorderRadius : 10px !default;
 $btnLargeBorder : $btnBorder !default;
 
 //---------------------GRID--------------------------//
-$gridColumns : 12;
+$gridColumns : 12 !default;
+$gridHeight : auto !default;
+$gridBackground : white !default;

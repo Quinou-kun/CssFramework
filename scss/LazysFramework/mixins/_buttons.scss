@@ -3,6 +3,8 @@
   outline: none;
   border: $border;
   padding: $padding;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 @mixin btn-style( $backgroundColor, $color, $borderRadius, $hoverBackgroundColor, $hoverBoxShadow, $hoverCursor, $activeTransform ){

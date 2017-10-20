@@ -2,43 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="scss/main.css" rel="stylesheet" title="Buttons css stylesheet">
-    <title>Grid</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="scss/main.css" rel="stylesheet" title="nav css stylesheet">
+    <title>Home page</title>
 </head>
 <body>
+
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="typo.html">Typography</a></li>
+    <li><a href="alerts.html">Alerts</a></li>
+    <li class="active"><a href="grid.html">Grid</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="nav.html">Navbar</a></li>
+</ul>
+
+<div class="align-center">
+    <h3>You are on the Grid page of the Lazy's Framework !</h3>
+    <hr>
+    <h5>
+        3 types of classes are available to manage the design in a responsive way.<br>So we can choose according to the size of the device the size of the different elements thanks to the classes
+        and therefore change the structure of our application
+    </h5>
+
+    <div>n = number of columns in the grid</div>
+    <table class="altern-tab">
+        <tr>
+            <th>scree width </th>
+            <th>class name</th>
+        </tr>
+        <tr>
+            <td>width &rsaquo; 1000px</td>
+            <td>col-lg-n</td>
+        </tr>
+        <tr>
+            <td>600px &lsaquo; width &lsaquo; 1000px</td>
+            <td>col-md-n</td>
+        </tr>
+        <tr>
+            <td>width &lsaquo; 600px</td>
+            <td>col-sm-n</td>
+        </tr>
+    </table>
+</div>
+
 <div class="wrapper">
-    <div class="col-sm-2 col-lg-12">
-        <p>bckdnbgnbfnkbv,n gfdmbj,lvbvngffgn g,n fgjjbn fbf fgn fg lbnlfg n,blk b;,df bvlk ,df</p>
+    <div class="col-lg-1 col-md-1 col-sm-1" style="background :#e2e2e2">
+        "col- .. -1"
     </div>
-    <div class="col-sm-10">
-        <code>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-            to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the
-            1960s with the release of Letraset sheets containing Lore
-        </code>
+    <div class="col-lg-2 col-md-2 col-sm-2" style="background :#e2e2e2">
+        "col- .. -2"
     </div>
-    <div class="col-sm-2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore
+    <div class="col-lg-3 col-md-3 col-sm-3" style="background :#e2e2e2">
+        "col- .. -3"
     </div>
-    <div class="col-sm-8">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore
+    <div class="col-lg-4 col-md-4 col-sm-4" style="background :#e2e2e2">
+        "col- .. -4"
     </div>
-    <div class="col-sm-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore
+    <div class="col-lg-5 col-md-5 col-sm-5" style="background :#e2e2e2">
+        "col- .. -5"
     </div>
-    <div class="col-sm-6">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore
+    <div class="col-lg-6 col-md-6 col-sm-6" style="background :#e2e2e2">
+        "col- .. -6"
     </div>
-    <div class="col-sm-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore
+    <div class="col-lg-7 col-md-7 col-sm-7" style="background :#e2e2e2">
+        "col- .. -7"
     </div>
-    <div class="col-sm-2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lore
+    <div class="col-lg-8 col-md-8 col-sm-8" style="background :#e2e2e2">
+        "col- .. -8"
     </div>
+    <div class="col-lg-9 col-md-9 col-sm-9" style="background :#e2e2e2">
+        "col- .. -9"
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10" style="background :#e2e2e2">
+        "col- .. -10"
+    </div>
+    <div class="col-lg-11 col-md-11 col-sm-11" style="background :#e2e2e2">
+        "col- .. -11"
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12" style="background :#e2e2e2">
+        "col- .. -12"
+    </div>
+
 </div>
 
 </body>

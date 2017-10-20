@@ -1,25 +1,33 @@
 .wrapper{
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
+  display : flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-items : flex-start;
+  flex-wrap: wrap;
 }
 
 @for $i from 1 through $gridColumns {
 
   div.col-sm-#{$i} {
+    background-color :  $gridBackground;
     width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
-    float : left;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
+    height : $gridHeight;
   }
 
 }
 
 @for $i from 1 through $gridColumns - 1 {
   div.offset-#{$i} {
-    width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
-    float : left;
-    margin: 0.5%;
-    padding: 0.5%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color :  $gridBackground;
+    margin-left: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
   }
 }
 
@@ -29,10 +37,13 @@
   @for $i from 1 through $gridColumns {
 
     div.col-md-#{$i} {
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color :  $gridBackground;
       width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
-      float : left;
       margin: 0.5%;
       padding: 0.5%;
+      height : $gridHeight;
     }
 
   }
@@ -42,12 +53,14 @@
   @for $i from 1 through $gridColumns {
 
     div.col-lg-#{$i} {
+      background-color : $gridBackground;
       width: ((100% - $gridColumns *2 ) / $gridColumns) * $i + ($i - 1) * 2 ;
-      float : left;
+      flex-grow: 0;
+      flex-shrink: 0;
       margin: 0.5%;
       padding: 0.5%;
+      height : $gridHeight;
     }
-
   }
 }
 

@@ -1,5 +1,5 @@
 
-.navbar{
+ul.navbar{
   font-weight: $navFontWeight;
   margin : 0;
   padding : 0;
@@ -9,12 +9,12 @@
   flex-direction: column;
 }
 
-.navbar > li{
+ul.navbar > li{
   flex-basis: 10%;
   text-align : center;
 }
 
-.navbar > li > a{
+ul.navbar > li > a{
   padding : 30px 0;
   display : block;
   color : white;
@@ -22,27 +22,27 @@
   width : 100%;
 }
 
-.navbar > li.active{
+ul.navbar > li.active{
   background-color : $activeNavBackground;
 }
 
-.navbar > li.disabled{
+ul.navbar > li.disabled{
   pointer-events: none;
   cursor: default;
   opacity: 0.6;
 }
 
-.navbar > li:hover{
+ul.navbar > li:hover{
   background-color : $hoverNavBackground;
 }
 
 @media screen and (min-width : 600px) {
-  .navbar{
+  ul.navbar{
     font-size: 1.2em;
     flex-direction: row;
   }
 
-  .navbar> li {
+  ul.navbar> li {
     flex-grow: 1;
     flex-shrink: 1;
   }
@@ -50,12 +50,12 @@
 
 
 @media screen and (min-width : 1000px){
-  .navbar{
+  ul.navbar{
     flex-direction: row;
     justify-content: flex-end;
   }
 
-  .navbar > li {
+  ul.navbar > li {
     flex-grow: 0;
     flex-shrink: 0;
   }

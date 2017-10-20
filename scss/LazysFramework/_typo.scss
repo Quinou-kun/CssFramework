@@ -8,9 +8,14 @@ body {
 
 }
 
+a {
+  display : inline-block;
+}
+
 h1,h2,h3,h4,h5,h6{
   font-weight: $hFontWeight;
-  margin : 20px;
+  margin : 2%;
+  line-height : 1.2em;
   display : block;
 }
 
@@ -66,6 +71,8 @@ h6.small, h6 small{
 }
 
 p{
+
+  line-height: 1.2em;
   margin-bottom : 25px;
 }
 
@@ -118,6 +125,7 @@ abbr{
   text-transform: capitalize;
 }
 ul {
+  list-style-position: inside;
   display: block;
   padding-left : 1%;
   list-style-type: disc;
@@ -140,6 +148,7 @@ ul.decoration-none{
   list-style-type: none;
 }
 
+
 blockquote{
   display : block;
   text-align : center;
@@ -159,11 +168,13 @@ blockquote:after{
 }
 
 code{
-  overflow: scroll;
+  overflow: auto;
+  max-width : 100%;
   white-space: pre;
   font-family: Consolas, monaco, monospace;
   display : block;
-  margin : 3% 12%;
+  margin : 1%;
+  display : inline-block;
   padding : 1%;
   background-color : $codeBackgroundColor;
   color : $codeColor;
@@ -182,7 +193,9 @@ kbd{
 }
 
 table{
-  margin-top : 10px;
+  display : inline-block;
+  margin : 1%;
+  padding : 1%;
 }
 
 table.simple-tab{
@@ -190,7 +203,7 @@ table.simple-tab{
   text-align: center;
 }
 
-table.simple-tab, th, td, tr {
+th, td, tr {
   border: $tableBorder;
   padding : 10px 20px;
 }
