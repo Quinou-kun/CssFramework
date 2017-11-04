@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../scss/main.css" rel="stylesheet" title="nav css stylesheet">
     <title>How ?</title>
 </head>
 <body>
+
+<ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="typo.html">Typography</a></li>
+    <li><a href="alerts.html">Alerts</a></li>
+    <li><a href="grid.html">Grid</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="nav.html">Navbar</a></li>
+    <li class="active"><a href="how.html">CSS/SCSS</a></li>
+</ul>
+
+<h3 class="align-center">How to use Lazy's Framework ?</h3>
+<hr>
+
+<hr>
+<div class="align-center">
+    <h5>
+        It is possible to use the framework in CSS or SCSS. In CSS, you only <br>
+        need to import the CSS folder containing the CSS file of the framework named <br>
+        "Lazy.css" . Upload this file to your html and voila! <br><br>
+        Regarding the use of the scss, just follow the tutorial below :)
+    </h5><hr>
+    <h3>SCSS</h3>
+    <H5>Download SCSS folder to the github repository : <br>
+        <a href="https://github.com/Quinou-kun/Lazy-s-Framework">https://github.com/Quinou-kun/Lazy-s-Framework</a>
+    </H5>
+    <h5>Import the "Lazy.scss" file into your personal CSS file : <br>
+        <code>@import "Lazy"; </code>
+    </h5>
+    <h5>Use Lazy's Framework's mixins to create custom objects with your custom classes : <br>
+        <code>.myCustomClass {@include genericLazyMixin(); ...}
+        </code>
+        <br>For example, create a custom grid :<br>
+        <code>.wrapper{@include wrapper; @include construct-grid($gridBackground, $gridHeight, $gridColumns); <i>your custom properties</i>}</code>
+    </h5>
+
+</div>
+
 
 </body>
 </html>
