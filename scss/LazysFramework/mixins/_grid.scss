@@ -1,0 +1,63 @@
+@mixin wrapper{
+  max-width: 100%;
+  box-sizing: border-box;
+  display : flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-items : flex-start;
+  flex-wrap: wrap;
+}
+
+@mixin column($background, $height){
+  background-color :  $background;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0.5%;
+  padding: 0.5%;
+}
+
+
+@mixin construct-columns($background, $height, $columnsNumber, $i){
+  @include column($background, $height);
+  width: ((100% - $columnsNumber *2 ) / $columnsNumber) * $i + ($i - 1) * 2 ;
+}
+
+@mixin construct-offset($background,$columnsNumber, $i){
+  margin-left: ((100% - $columnsNumber *2 ) / $columnsNumber) * $i + ($i - 1) * 2 ;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color :  $background;
+}
+
+
+@mixin construct-grid($background, $height, $columnsNumber ){
+  @for $i from 1 through $columnsNumber {
+
+    div.col-sm-#{$i} {
+      @include construct-columns($background, $height, $columnsNumber,$i);
+    }
+  }
+
+  @for $i from 1 through $columnsNumber - 1 {
+    div.offset-#{$i} {
+      @include construct-offset($background,$columnsNumber,$i)
+    }
+  }
+
+  @media screen and (min-width: 600px){
+    @for $i from 1 through $gridColumns {
+      div.col-md-#{$i} {
+        @include construct-columns($background, $height, $columnsNumber,$i);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px){
+    @for $i from 1 through $gridColumns {
+      div.col-lg-#{$i} {
+        @include construct-columns($background, $height, $columnsNumber,$i);
+      }
+    }
+  }
+
+}
