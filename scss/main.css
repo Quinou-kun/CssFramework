@@ -579,57 +579,57 @@ ul.navbar > li > a {
     margin: 0.5%;
     padding: 0.5%;
     width: 98%; }
-  .wrapper div.offset-1 {
+  .wrapper div.offset-sm-1 {
     margin-left: 6.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-2 {
+  .wrapper div.offset-sm-2 {
     margin-left: 14.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-3 {
+  .wrapper div.offset-sm-3 {
     margin-left: 23%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-4 {
+  .wrapper div.offset-sm-4 {
     margin-left: 31.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-5 {
+  .wrapper div.offset-sm-5 {
     margin-left: 39.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-6 {
+  .wrapper div.offset-sm-6 {
     margin-left: 48%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-7 {
+  .wrapper div.offset-sm-7 {
     margin-left: 56.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-8 {
+  .wrapper div.offset-sm-8 {
     margin-left: 64.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-9 {
+  .wrapper div.offset-sm-9 {
     margin-left: 73%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-10 {
+  .wrapper div.offset-sm-10 {
     margin-left: 81.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     background-color: white; }
-  .wrapper div.offset-11 {
+  .wrapper div.offset-sm-11 {
     margin-left: 89.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
@@ -718,7 +718,62 @@ ul.navbar > li > a {
       flex-shrink: 0;
       margin: 0.5%;
       padding: 0.5%;
-      width: 98%; } }
+      width: 98%; }
+    .wrapper div.offset-md-1 {
+      margin-left: 6.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-2 {
+      margin-left: 14.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-3 {
+      margin-left: 23%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-4 {
+      margin-left: 31.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-5 {
+      margin-left: 39.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-6 {
+      margin-left: 48%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-7 {
+      margin-left: 56.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-8 {
+      margin-left: 64.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-9 {
+      margin-left: 73%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-10 {
+      margin-left: 81.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-md-11 {
+      margin-left: 89.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; } }
   @media screen and (min-width: 1000px) {
     .wrapper div.col-lg-1 {
       background-color: white;
@@ -803,6 +858,61 @@ ul.navbar > li > a {
       flex-shrink: 0;
       margin: 0.5%;
       padding: 0.5%;
-      width: 98%; } }
+      width: 98%; }
+    .wrapper div.offset-lg-1 {
+      margin-left: 6.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-2 {
+      margin-left: 14.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-3 {
+      margin-left: 23%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-4 {
+      margin-left: 31.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-5 {
+      margin-left: 39.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-6 {
+      margin-left: 48%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-7 {
+      margin-left: 56.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-8 {
+      margin-left: 64.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-9 {
+      margin-left: 73%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-10 {
+      margin-left: 81.3333333333%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; }
+    .wrapper div.offset-lg-11 {
+      margin-left: 89.6666666667%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: white; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -39,7 +39,7 @@
   }
 
   @for $i from 1 through $columnsNumber - 1 {
-    div.offset-#{$i} {
+    div.offset-sm-#{$i} {
       @include construct-offset($background,$columnsNumber,$i)
     }
   }
@@ -50,12 +50,24 @@
         @include construct-columns($background, $height, $columnsNumber,$i);
       }
     }
+
+    @for $i from 1 through $columnsNumber - 1 {
+      div.offset-md-#{$i} {
+        @include construct-offset($background,$columnsNumber,$i)
+      }
+    }
   }
 
   @media screen and (min-width: 1000px){
     @for $i from 1 through $gridColumns {
       div.col-lg-#{$i} {
         @include construct-columns($background, $height, $columnsNumber,$i);
+      }
+    }
+
+    @for $i from 1 through $columnsNumber - 1 {
+      div.offset-lg-#{$i} {
+        @include construct-offset($background,$columnsNumber,$i)
       }
     }
   }
