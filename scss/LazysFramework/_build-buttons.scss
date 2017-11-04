@@ -6,19 +6,19 @@
   @include btn-text($btnFontSize, $btnLineHeight);
 }
 
-.btn-small{
+.small{
   @include btn-struct($btnSmallPadding, $btnSmallBorder);
   @include btn-style($btnBackgroundColor, $btnColor, $btnSmallBorderRadius, $btnHoverBackgroundColor, $btnHoverBoxShadow, $btnHoverCursor, $btnActiveTransform);
   @include btn-text($btnSmallFontSize, $btnSmallLineHeight);
 }
 
-.btn-large{
+.large{
   @include btn-struct($btnLargePadding, $btnLargeBorder);
   @include btn-style($btnBackgroundColor, $btnColor, $btnLargeBorderRadius, $btnHoverBackgroundColor, $btnHoverBoxShadow, $btnHoverCursor, $btnActiveTransform);
   @include btn-text($btnLargeFontSize, $btnLargeLineHeight);
 }
 
-.btn-blue{
+.blue{
   @extend .btn;
   color: white;
   background-color: dodgerblue;
@@ -27,7 +27,7 @@
   }
 }
 
-.btn-red{
+.red{
   @extend .btn;
   color: white;
   background-color: red;
@@ -36,7 +36,7 @@
   }
 }
 
-.btn-green{
+.green{
   @extend .btn;
   color: white;
   background-color: green;
@@ -45,18 +45,18 @@
   }
 }
 
-.btn-flat{
+.flat{
   @include btn-struct($btnPadding, none);
   @include btn-style($btnBackgroundColor, $btnColor, 0, $btnHoverBackgroundColor, none, $btnHoverCursor, none);
   @include btn-text($btnFontSize, $btnLineHeight);
 }
 
-.btn-extraLarge{
+.extraLarge{
   @extend .btn;
   width : 100%;
 }
 
-.btn-fancy{
+.fancy{
   @extend .btn;
   transition: transform 1s;
   &:hover{

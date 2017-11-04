@@ -1,0 +1,21 @@
+@import "mixins/navbar";
+
+ul.navbar{
+  @include construct-nav($navFontWeight, $navBackground);
+}
+
+ul.navbar > li{
+  @include construct-li($hoverNavBackground);
+}
+ul.navbar > li.active{
+  @include construct-li($activeNavBackground, $hoverNavBackground);
+}
+ul.navbar > li.disabled{
+  @include construct-li($hoverNavBackground);
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
+ul.navbar > li > a{
+  @include construct-a;
+}

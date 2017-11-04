@@ -87,7 +87,7 @@ hr {
 input, select {
   vertical-align: middle; }
 
-.btn, .btn-blue, .btn-red, .btn-green, .btn-extraLarge, .btn-fancy {
+.btn, .blue, .red, .green, .extraLarge, .fancy {
   margin: 5px;
   outline: none;
   border: 1px solid lightgray;
@@ -100,14 +100,14 @@ input, select {
   text-align: center;
   font-size: 1em;
   line-height: 1em; }
-  .btn:hover, .btn-blue:hover, .btn-red:hover, .btn-green:hover, .btn-extraLarge:hover, .btn-fancy:hover {
+  .btn:hover, .blue:hover, .red:hover, .green:hover, .extraLarge:hover, .fancy:hover {
     cursor: pointer;
     box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
     background-color: #f2f2f2; }
-  .btn:active, .btn-blue:active, .btn-red:active, .btn-green:active, .btn-extraLarge:active, .btn-fancy:active {
+  .btn:active, .blue:active, .red:active, .green:active, .extraLarge:active, .fancy:active {
     transform: translateY(1px); }
 
-.btn-small {
+.small {
   margin: 5px;
   outline: none;
   border: 1px solid lightgray;
@@ -120,14 +120,14 @@ input, select {
   text-align: center;
   font-size: 75%;
   line-height: 75%; }
-  .btn-small:hover {
+  .small:hover {
     cursor: pointer;
     box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
     background-color: #f2f2f2; }
-  .btn-small:active {
+  .small:active {
     transform: translateY(1px); }
 
-.btn-large {
+.large {
   margin: 5px;
   outline: none;
   border: 1px solid lightgray;
@@ -140,32 +140,32 @@ input, select {
   text-align: center;
   font-size: 150%;
   line-height: 150%; }
-  .btn-large:hover {
+  .large:hover {
     cursor: pointer;
     box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
     background-color: #f2f2f2; }
-  .btn-large:active {
+  .large:active {
     transform: translateY(1px); }
 
-.btn-blue {
+.blue {
   color: white;
   background-color: dodgerblue; }
-  .btn-blue:hover {
+  .blue:hover {
     background-color: #0077ea; }
 
-.btn-red {
+.red {
   color: white;
   background-color: red; }
-  .btn-red:hover {
+  .red:hover {
     background-color: #cc0000; }
 
-.btn-green {
+.green {
   color: white;
   background-color: green; }
-  .btn-green:hover {
+  .green:hover {
     background-color: #004d00; }
 
-.btn-flat {
+.flat {
   margin: 5px;
   outline: none;
   border: none;
@@ -178,19 +178,19 @@ input, select {
   text-align: center;
   font-size: 1em;
   line-height: 1em; }
-  .btn-flat:hover {
+  .flat:hover {
     cursor: pointer;
     box-shadow: none;
     background-color: #f2f2f2; }
-  .btn-flat:active {
+  .flat:active {
     transform: none; }
 
-.btn-extraLarge {
+.extraLarge {
   width: 100%; }
 
-.btn-fancy {
+.fancy {
   transition: transform 1s; }
-  .btn-fancy:hover {
+  .fancy:hover {
     transform: rotate(360deg) scale(1.5); }
 
 .alert-error {
@@ -422,10 +422,60 @@ ul.navbar {
   list-style: none;
   display: flex;
   flex-direction: column; }
+  @media screen and (min-width: 600px) {
+    ul.navbar {
+      font-size: 1.2em;
+      flex-direction: row; } }
+  @media screen and (min-width: 1000px) {
+    ul.navbar {
+      flex-direction: row;
+      justify-content: flex-end; } }
 
 ul.navbar > li {
   flex-basis: 10%;
   text-align: center; }
+  ul.navbar > li:hover {
+    background-color: darkgray; }
+  @media screen and (min-width: 600px) {
+    ul.navbar > li {
+      flex-grow: 1;
+      flex-shrink: 1; } }
+  @media screen and (min-width: 1000px) {
+    ul.navbar > li {
+      flex-grow: 0;
+      flex-shrink: 0; } }
+
+ul.navbar > li.active {
+  flex-basis: 10%;
+  text-align: center;
+  background-color: darkgray; }
+  ul.navbar > li.active:hover {
+    background-color: darkgray; }
+  @media screen and (min-width: 600px) {
+    ul.navbar > li.active {
+      flex-grow: 1;
+      flex-shrink: 1; } }
+  @media screen and (min-width: 1000px) {
+    ul.navbar > li.active {
+      flex-grow: 0;
+      flex-shrink: 0; } }
+
+ul.navbar > li.disabled {
+  flex-basis: 10%;
+  text-align: center;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6; }
+  ul.navbar > li.disabled:hover {
+    background-color: darkgray; }
+  @media screen and (min-width: 600px) {
+    ul.navbar > li.disabled {
+      flex-grow: 1;
+      flex-shrink: 1; } }
+  @media screen and (min-width: 1000px) {
+    ul.navbar > li.disabled {
+      flex-grow: 0;
+      flex-shrink: 0; } }
 
 ul.navbar > li > a {
   padding: 30px 0;
@@ -434,33 +484,6 @@ ul.navbar > li > a {
   text-decoration: none;
   width: 100%; }
 
-ul.navbar > li.active {
-  background-color: darkgray; }
-
-ul.navbar > li.disabled {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.6; }
-
-ul.navbar > li:hover {
-  background-color: darkgray; }
-
-@media screen and (min-width: 600px) {
-  ul.navbar {
-    font-size: 1.2em;
-    flex-direction: row; }
-
-  ul.navbar > li {
-    flex-grow: 1;
-    flex-shrink: 1; } }
-@media screen and (min-width: 1000px) {
-  ul.navbar {
-    flex-direction: row;
-    justify-content: flex-end; }
-
-  ul.navbar > li {
-    flex-grow: 0;
-    flex-shrink: 0; } }
 .wrapper {
   max-width: 100%;
   box-sizing: border-box;

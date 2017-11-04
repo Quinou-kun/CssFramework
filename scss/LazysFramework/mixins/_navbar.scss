@@ -1,0 +1,51 @@
+@mixin navbar-struct($fontWeight, $background){
+  font-weight: $fontWeight;
+  margin : 0;
+  padding : 0;
+  background-color : $background;
+  list-style: none;
+  display : flex;
+  flex-direction: column;
+}
+
+@mixin construct-li($hoverBackground, $activeBackground:null){
+  flex-basis: 10%;
+  text-align : center;
+  background-color: $activeBackground;
+  &:hover{
+    background-color : $hoverBackground;
+  }
+
+
+  @media screen and (min-width : 600px) {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  @media screen and (min-width : 1000px){
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+@mixin construct-a(){
+  padding : 30px 0;
+  display : block;
+  color : white;
+  text-decoration: none;
+  width : 100%;
+}
+
+@mixin construct-nav($fontWeight, $background){
+  @include navbar-struct($fontWeight,$background);
+
+  @media screen and (min-width : 600px) {
+    font-size: 1.2em;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width : 1000px){
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
