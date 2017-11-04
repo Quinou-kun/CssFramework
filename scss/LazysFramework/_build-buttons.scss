@@ -6,7 +6,7 @@
   @include btn-text($btnFontSize, $btnLineHeight);
 }
 
-.small{
+button.small, a.small{
   @include btn-struct($btnSmallPadding, $btnSmallBorder);
   @include btn-style($btnBackgroundColor, $btnColor, $btnSmallBorderRadius, $btnHoverBackgroundColor, $btnHoverBoxShadow, $btnHoverCursor, $btnActiveTransform);
   @include btn-text($btnSmallFontSize, $btnSmallLineHeight);
