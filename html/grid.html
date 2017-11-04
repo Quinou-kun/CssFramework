@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link href="scss/main.css" rel="stylesheet" title="nav css stylesheet">
+    <link href="../scss/main.css" rel="stylesheet" title="nav css stylesheet">
     <title>Grid</title>
 </head>
 <body>
 
 <ul class="navbar">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="../index.html">Home</a></li>
     <li><a href="typo.html">Typography</a></li>
     <li><a href="alerts.html">Alerts</a></li>
     <li class="active"><a href="grid.html">Grid</a></li>
@@ -22,10 +22,10 @@
     <h3>You are on the Grid page of the Lazy's Framework !</h3>
     <hr>
     <h5>
-        3 types of classes are available to manage the design in a responsive way.<br>So we can choose according to the size of the device the size of the different elements thanks to the classes
+        2 types of classes are available to manage the design in a responsive way : col and offset<br>So we can choose according to the size of the device the size of the different elements thanks to the classes
         and therefore change the structure of our application<br><BR>
-        /!\ YOU MUST USE ALL THE THREE TAGS IF YOU WANT TO HAVE A RESPONSIVE DESIGN <br>
-        Ex : <code>&lt;div class="col-lg-1 col-md-4 col-sm-12"&#62;</code>
+        /!\ YOU MUST USE ALL THE THREE TAGS OF THE EACH TYPE IF YOU WANT TO HAVE A RESPONSIVE DESIGN <br>
+        Ex : <code>&lt;div class="col-lg-1 col-md-4 col-sm-12 offset-md-4"&#62;</code>
     </h5>
 
     <div>n = number of columns in the grid</div>
@@ -59,8 +59,8 @@
     <div class="col-lg-3 col-md-3 col-sm-3" style="background :#e2e2e2">
         "col- .. -3"
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4" style="background :#e2e2e2">
-        "col- .. -4"
+    <div class="col-lg-4 col-md-4 col-sm-4 offset-lg-2 offset-md-2 offset-sm-2" style="background :#e2e2e2">
+        "col- .. -4 + offset- .. -2"
     </div>
     <div class="col-lg-5 col-md-5 col-sm-5" style="background :#e2e2e2">
         "col- .. -5"
