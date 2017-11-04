@@ -492,396 +492,314 @@ ul.navbar > li > a {
   flex-flow: row;
   align-items: flex-start;
   flex-wrap: wrap; }
-
-div.col-sm-1 {
-  background-color: white;
-  width: 6.3333333333%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-2 {
-  background-color: white;
-  width: 14.6666666667%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-3 {
-  background-color: white;
-  width: 23%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-4 {
-  background-color: white;
-  width: 31.3333333333%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-5 {
-  background-color: white;
-  width: 39.6666666667%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-6 {
-  background-color: white;
-  width: 48%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-7 {
-  background-color: white;
-  width: 56.3333333333%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-8 {
-  background-color: white;
-  width: 64.6666666667%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-9 {
-  background-color: white;
-  width: 73%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-10 {
-  background-color: white;
-  width: 81.3333333333%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-11 {
-  background-color: white;
-  width: 89.6666666667%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.col-sm-12 {
-  background-color: white;
-  width: 98%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0.5%;
-  padding: 0.5%;
-  height: auto; }
-
-div.offset-1 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 6.3333333333%; }
-
-div.offset-2 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 14.6666666667%; }
-
-div.offset-3 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 23%; }
-
-div.offset-4 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 31.3333333333%; }
-
-div.offset-5 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 39.6666666667%; }
-
-div.offset-6 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 48%; }
-
-div.offset-7 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 56.3333333333%; }
-
-div.offset-8 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 64.6666666667%; }
-
-div.offset-9 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 73%; }
-
-div.offset-10 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 81.3333333333%; }
-
-div.offset-11 {
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  margin-left: 89.6666666667%; }
-
-@media screen and (min-width: 600px) {
-  div.col-md-1 {
-    flex-grow: 0;
-    flex-shrink: 0;
+  .wrapper div.col-sm-1 {
     background-color: white;
-    width: 6.3333333333%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-2 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 14.6666666667%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-3 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 23%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-4 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 31.3333333333%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-5 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 39.6666666667%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-6 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 48%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-7 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 56.3333333333%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-8 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 64.6666666667%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-9 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 73%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-10 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 81.3333333333%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-11 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 89.6666666667%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; }
-
-  div.col-md-12 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    background-color: white;
-    width: 98%;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: auto; } }
-@media screen and (min-width: 1000px) {
-  div.col-lg-1 {
-    background-color: white;
-    width: 6.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-2 {
+    width: 6.3333333333%; }
+  .wrapper div.col-sm-2 {
     background-color: white;
-    width: 14.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-3 {
+    width: 14.6666666667%; }
+  .wrapper div.col-sm-3 {
     background-color: white;
-    width: 23%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-4 {
+    width: 23%; }
+  .wrapper div.col-sm-4 {
     background-color: white;
-    width: 31.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-5 {
+    width: 31.3333333333%; }
+  .wrapper div.col-sm-5 {
     background-color: white;
-    width: 39.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-6 {
+    width: 39.6666666667%; }
+  .wrapper div.col-sm-6 {
     background-color: white;
-    width: 48%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-7 {
+    width: 48%; }
+  .wrapper div.col-sm-7 {
     background-color: white;
-    width: 56.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-8 {
+    width: 56.3333333333%; }
+  .wrapper div.col-sm-8 {
     background-color: white;
-    width: 64.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-9 {
+    width: 64.6666666667%; }
+  .wrapper div.col-sm-9 {
     background-color: white;
-    width: 73%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-10 {
+    width: 73%; }
+  .wrapper div.col-sm-10 {
     background-color: white;
-    width: 81.3333333333%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-11 {
+    width: 81.3333333333%; }
+  .wrapper div.col-sm-11 {
     background-color: white;
-    width: 89.6666666667%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; }
-
-  div.col-lg-12 {
+    width: 89.6666666667%; }
+  .wrapper div.col-sm-12 {
     background-color: white;
-    width: 98%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.5%;
     padding: 0.5%;
-    height: auto; } }
+    width: 98%; }
+  .wrapper div.offset-1 {
+    margin-left: 6.3333333333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-2 {
+    margin-left: 14.6666666667%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-3 {
+    margin-left: 23%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-4 {
+    margin-left: 31.3333333333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-5 {
+    margin-left: 39.6666666667%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-6 {
+    margin-left: 48%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-7 {
+    margin-left: 56.3333333333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-8 {
+    margin-left: 64.6666666667%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-9 {
+    margin-left: 73%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-10 {
+    margin-left: 81.3333333333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  .wrapper div.offset-11 {
+    margin-left: 89.6666666667%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white; }
+  @media screen and (min-width: 600px) {
+    .wrapper div.col-md-1 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 6.3333333333%; }
+    .wrapper div.col-md-2 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 14.6666666667%; }
+    .wrapper div.col-md-3 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 23%; }
+    .wrapper div.col-md-4 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 31.3333333333%; }
+    .wrapper div.col-md-5 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 39.6666666667%; }
+    .wrapper div.col-md-6 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 48%; }
+    .wrapper div.col-md-7 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 56.3333333333%; }
+    .wrapper div.col-md-8 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 64.6666666667%; }
+    .wrapper div.col-md-9 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 73%; }
+    .wrapper div.col-md-10 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 81.3333333333%; }
+    .wrapper div.col-md-11 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 89.6666666667%; }
+    .wrapper div.col-md-12 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 98%; } }
+  @media screen and (min-width: 1000px) {
+    .wrapper div.col-lg-1 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 6.3333333333%; }
+    .wrapper div.col-lg-2 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 14.6666666667%; }
+    .wrapper div.col-lg-3 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 23%; }
+    .wrapper div.col-lg-4 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 31.3333333333%; }
+    .wrapper div.col-lg-5 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 39.6666666667%; }
+    .wrapper div.col-lg-6 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 48%; }
+    .wrapper div.col-lg-7 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 56.3333333333%; }
+    .wrapper div.col-lg-8 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 64.6666666667%; }
+    .wrapper div.col-lg-9 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 73%; }
+    .wrapper div.col-lg-10 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 81.3333333333%; }
+    .wrapper div.col-lg-11 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 89.6666666667%; }
+    .wrapper div.col-lg-12 {
+      background-color: white;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 98%; } }
 
 /*# sourceMappingURL=main.css.map */
